@@ -1,0 +1,132 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StevKast | Home</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/988b5047d2.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StevKast | Mini Tutorials</title>
+</head>
+<body>
+	<!-- How to set up your Foundation project -->
+	<div class="grid-container">
+		<div class="card margin-vertical-3">
+			<div class="card-divider">
+				<strong>How to set up your Foundation project</strong>
+			</div>
+			<div class="card-section">
+				<span class="badge">1</span>
+				Install <a href="https://nodejs.org/dist/latest-v11.x/" target="_blank">Node.js version 11</a>  
+				<br><span class="badge">2</span>
+				Install <a href="https://gitforwindows.org/" target="_blank">Git</a> 
+				<br><span class="badge">3</span>
+				Open Node.js command prompt (Run as administrator)
+				<br><span class="badge">4</span>
+				Type: 
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod1')">Copy</button>
+					<pre><code id="cod1">npm install --production windows-build-tools</code></pre>
+				</div>
+				<span class="badge">5</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod2')">Copy</button>
+					<pre><code id="cod2">npm install --global foundation-cli</code></pre>
+				</div>
+				<span class="badge">6</span>
+				Go to the folder where the project will be (e.g. Desktop)
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod3')">Copy</button>
+					<pre><code id="cod3">cd Desktop</code></pre>
+				</div>
+				<span class="badge">7</span>
+				In the folder type: 
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod4')">Copy</button>
+					<pre><code id="cod4">foundation new</code></pre>
+				</div>
+				<span class="badge">8</span>
+				Select "website"
+				<br><span class="badge">9</span>
+				Type the name of the project
+				<br><span class="badge">10</span>
+				Select ZURB to use all the tools
+				<br><span class="badge">11</span>
+				Go to the project folder
+				<br><span class="badge">12</span>
+				Type 
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod5')">Copy</button>
+					<pre><code id="cod5">npm start</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>	<!-- How to push your Foundation project -->
+	<div class="grid-container">
+		<div class="card margin-vertical-3">
+			<div class="card-divider">
+				<strong>How to push your Foundation project</strong>
+			</div>
+			<div class="card-section">
+				<span class="badge secondary">1</span>
+				Open Node.js command prompt (Run as administrator) and go to the project folder
+				<br><span class="badge secondary">2</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod6')">Copy</button>
+					<pre><code id="cod6">git init</code></pre> 
+				</div>
+				<span class="badge secondary">3</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod7')">Copy</button>
+					<pre><code id="cod7">git remote add remote-name git-url</code></pre> 
+				</div>
+				Make sure to replace remote-name and git-url
+				<br><span class="badge secondary">4</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod8')">Copy</button>
+					<pre><code id="cod8">npm run build</code></pre> 
+				</div>
+				<span class="badge secondary">5</span>
+				Look for .gitignore file in te project and remove the line dist from there
+				<br><span class="badge secondary">6</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod9')">Copy</button>
+					<pre><code id="cod9">git add -A</code></pre>
+				</div>
+				<span class="badge secondary">7</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod10')">Copy</button>
+					<pre><code id="cod10">git commit -m "comment"</code></pre>
+				</div>
+				<span class="badge secondary">8</span>
+				Type:
+				<div class="docs-code">
+					<button class="button small docs-code-copy" onclick="copyToClipboard('cod11')">Copy</button>
+					<pre><code id="cod11">git subtree push --prefix dist remote-name gh-pages</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
